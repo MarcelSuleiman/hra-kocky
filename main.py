@@ -3,6 +3,7 @@
 # hra kocky
 
 import random
+import operator
 
 class Player:
 	def __init__(self, name: str):
@@ -160,11 +161,11 @@ if __name__ == '__main__':
 		
 		# Toto zakomentovat vo finalnej verzii kde si uzivatel zada pocet a mena hracov
 		players = [Player('Marcel'), Player('Tomáš'), Player('Ivan')]
-
 		game = Game(players)
-
-		'''
+	
 		# toto odkomentovat vo finalnej verzii kde si uzivatel zada pocet a mena hracov
+		'''
+		game = Game()
 
 		for player in range(count_of_players):
 			game.create_players()
